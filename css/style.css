@@ -1,0 +1,79 @@
+body{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.cimg01, .cimg02, .cimg03 {
+  position: relative;
+  opacity: 1; /*0.70;*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed; // or scroll
+
+}
+
+
+.cimg01{
+  background-image: url('../IMG/img01.jpg');
+  min-height: 1000px;
+}
+
+.cimg02{
+  background-image: url('../IMG/img02.jpg');
+  min-height: 600px;
+}
+
+.cimg03{
+  background-image: url('../IMG/img03.jpg');
+  min-height: 600px;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+
+}
+
+.section-L{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-D{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ctext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 48px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ctext .border{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ctext .border.trans{
+  background-color: transparent;
+}
+
+@media(max-width:568px) {
+  .cimg01, .cimg02, .cimg03 {
+    background-attachment: scroll;
+  }
+}
